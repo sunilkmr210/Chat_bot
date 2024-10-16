@@ -26,6 +26,9 @@
     width: 70%;
     height: auto;
     margin-right: 10px;
+    padding: 5px 15px;
+    overflow: hidden;
+    font-size: 17px;
 }
 
 .submit {

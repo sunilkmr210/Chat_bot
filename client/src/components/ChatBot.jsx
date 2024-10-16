@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import './ChatBot.css'
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios'
@@ -10,6 +10,8 @@ const arr = [];
 const summary = [];
 
 const ChatBot = () => {
+
+    const textRef = useRef(null);
 
     const [query, setQuery] = useState("");
     const [session, setSession] = useState("");
@@ -37,7 +39,7 @@ const ChatBot = () => {
                 })
 
                 const ans = res.data;
-                if(ans.error){
+                if (ans.error) {
                     arr.push(ans.error);
                     return;
                 }
@@ -66,7 +68,7 @@ const ChatBot = () => {
                 });
 
                 const savedUser = res.data;
-                if(savedUser.err){
+                if (savedUser.err) {
                     setFlag1(true);
                     setTimeout(() => {
                         setFlag1(false);
@@ -100,6 +102,15 @@ const ChatBot = () => {
         navigate('/savedChats');
     }
 
+    const handleInput = () => {
+        const text = textRef.current;
+        if (text) {
+            text.style.height = "auto";
+            text.style.height = `${text.scrollHeight}px`;
+        }
+    }
+
+
     return (
         <>
             <div className='nav'>
@@ -116,13 +127,13 @@ const ChatBot = () => {
                         <div key={index} className={index % 2 === 0 ? "even-div" : "odd-div"}>
                             {ele}
                         </div>
-                        {index%2!=0 && <div className='odd-div'>SUMMARY: {summary[(index-1)/2]}</div>}
+                        {index % 2 != 0 && <div className='odd-div'>SUMMARY: {summary[(index - 1) / 2]}</div>}
                     </>
                 ))}
             </div>}
 
             <div className='query'>
-                <textarea className='enter' type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
+                <textarea ref={textRef} rows="1" onInput={handleInput} className='enter' type="text" value={query} onChange={(e) => setQuery(e.target.value)} />
                 <button className='submit' onClick={handleClick}>Send</button>
             </div>
         </>
