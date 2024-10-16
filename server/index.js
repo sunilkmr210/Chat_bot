@@ -14,7 +14,7 @@ connectToMongo();
 app.use(cors({
     origin: 'https://chat-bot-66lx.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'token']
 }));
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'https://chat-bot-66lx.vercel.app');
