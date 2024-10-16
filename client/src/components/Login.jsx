@@ -42,23 +42,23 @@ const Login = () => {
         >
             {error&&<div> Login failed</div>}
             <input
-                style={{ padding: 10, marginBottom: 20, width: "60%" }}
+                style={{ padding: 10, marginBottom: 20, width: "80%", maxWidth:"500px" }}
                 type="text"
                 placeholder="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
             <input
-                style={{ padding: 10, marginBottom: 20, width: "60%" }}
+                style={{ padding: 10, marginBottom: 20, width: "80%", maxWidth: "500px" }}
                 type="password"
                 placeholder="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={handleClick} style={{ padding: 10, width: "15%", marginBottom: 5 }}>
+            <button onClick={handleClick} style={{ padding: 10, width: "15%", maxWidth:"100px", marginBottom: 5 }}>
                 Login
             </button>
-            <button onClick={handleClick1} style={{ padding: 10, width: "22%" }}>
+            <button onClick={handleClick1} style={{ padding: 10, width: "20%", maxWidth:"150px" }}>
                 Not have account, Register
             </button>
         </div>
