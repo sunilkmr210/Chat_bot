@@ -11,7 +11,7 @@ const port = 5000;
 connectToMongo();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://chat-bot-hp42.vercel.app/' }));
 
 app.use('/api/auth', authRoute);
 app.use('/api/chats', chatRoute);
