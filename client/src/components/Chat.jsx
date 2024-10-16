@@ -11,7 +11,7 @@ const Chat = () => {
   return (
     <div className='container'>
             {!chat.empty&&chat.map((ele, index) => (
-                <div key={index} className={index % 2 === 0 ? "even-div" : "odd-div"}>
+                <div key={index} className={index % 2 === 0 ? "even-div1" : "odd-div1"}>
                     {ele}
                 </div>
             ))}

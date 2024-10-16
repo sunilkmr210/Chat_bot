@@ -45,20 +45,20 @@ const Register = () => {
             }}
         >
             <input
-                style={{ padding: 10, marginBottom: 20, width: "500px" }}
+                style={{ padding: 10, marginBottom: 20, width: "80%", maxWidth:"500px" }}
                 type="text"
                 placeholder="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
             <input
-                style={{ padding: 10, marginBottom: 20, width: "500px" }}
+                style={{ padding: 10, marginBottom: 20, width: "80%", maxWidth: "500px" }}
                 type="password"
                 placeholder="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={handleClick} style={{ padding: 10, width: 100 }}>
+            <button onClick={handleClick} style={{ padding: 10, width: "15%", maxWidth:"100px" }}>
                 Register
             </button>
         </div>

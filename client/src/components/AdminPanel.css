@@ -13,7 +13,8 @@
     padding-left: 50px;
     background-color: rgb(245, 247, 248);
     font-weight: 50;
-    width: 60%;
+    width: 80%;
+    max-width: 1000px;
     display: flex;
     
 }

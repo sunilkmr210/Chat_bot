@@ -1,14 +1,16 @@
-.even-div{
+.even-div1 {
     border: 1px solid rgb(123, 120, 120);
     border-radius: 10px;
     background-color: rgb(228, 228, 228);
-    width: 70%;
+    width: 90%;
+    max-width: 1200px;
     margin: 10px auto;
     padding: 10px;
 }
 
-.odd-div {
-    width: 70%;
+.odd-div1 {
+    width: 90%;
+    max-width: 1200px;
     margin: 15px auto;
 }
 

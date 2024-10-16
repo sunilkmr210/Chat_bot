@@ -24,7 +24,7 @@ const SavedChats = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='container2'>
             {chats.length === 0 && <div style={{margin: "20px", fontWeight: "bold", fontSize:"20px", textAlign: "center"}}>No chat is saved yet</div>}
             {chats?.map((chat) => (
                 <div className='chats'>

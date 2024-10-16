@@ -44,7 +44,7 @@ const AdminPanel = () => {
 
   return (
     <>
-    <h3 style={{textAlign:"center",fontWeight: 20, marginTop:"40px", marginBottom:"-40px"}}>Chatbot Users</h3>
+    <h3 style={{textAlign:"center",fontWeight: 20, marginTop:"40px", marginBottom:"0px"}}>Chatbot Users</h3>
     <div className='container'>
     {users.map((user)=>(
         <div key={user.username} className='users'>

@@ -118,7 +118,7 @@ const ChatBot = () => {
                 <div style={{ cursor: "pointer" }} onClick={handleHistory}>History</div>
             </div>
             {arr.length === 0 && <div className='start'>How can I help you today</div>}
-            {!(arr.length === 0) && <div className='container'>
+            {!(arr.length === 0) && <div className='container1'>
                 <div style={{ textAlign: "center", marginBottom: 10, fontWeight: "bold", cursor: "pointer" }} onClick={handleSave}>Save chat</div>
                 {flag && <div style={{ color: "green", textAlign: "center" }}>Successfully Saved</div>}
                 {flag1 && <div style={{ color: "red", textAlign: "center" }}>Not Saved</div>}
