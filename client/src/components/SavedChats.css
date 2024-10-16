@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.chats {
+    border: 0 solid rgb(225, 222, 222);
+    border-radius: 3px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(245, 247, 248);
+    font-weight: 350;
+    width: 60%;
+    display: flex;
+    
+}
+
+.fullChat {
+    align-items: flex-end;
+    height: 40px;
+    width: 60px;
+    border: none;
+    color: grey;
+    cursor: pointer;
+}
