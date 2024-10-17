@@ -24,7 +24,7 @@ Login
 2. Login after register
 3. hello1, 0987654321 are admin credentials who has extra feature of seeing all the users and their saved chats.
 
-![alt text](<Screenshot (29).png>)
+![alt text](<Screenshot (34).png>)
 
 ChatBot home
 
