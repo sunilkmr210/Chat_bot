@@ -17,6 +17,7 @@ Installation
 ```bash
 Chat-Bot highlights
 ```
+A chatbot is created with responsive design which is functional over various screen sizes.
 
 Login
 
